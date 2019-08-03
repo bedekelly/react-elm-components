@@ -1,3 +1,5 @@
+_Fork Purpose: Enable directly importing `.elm` files without clumsy `.Elm.Main` addition._ 
+
 # Write React components in Elm
 
 This package makes it easy to turn Elm code into React components.
