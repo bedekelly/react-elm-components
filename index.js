@@ -10,7 +10,7 @@ module.exports = createReactClass({
     if (this.props.src.embed) {
       // Elm 0.18
       app = this.props.src.embed(node, this.props.flags);
-    } else if (this.props.src.init) {
+    } else if (this.props.src.Elm.Main.init) {
       // Elm 0.19
       // Note that Elm 0.19 doesn't treat `node` as a container, but rather as a placeholder.
       // The Elm App will replace the provided node, rather than mount itself within the provided node.
