@@ -18,7 +18,7 @@ module.exports = createReactClass({
       // The workaround is to create an extra <div>, which React doesn't control, and allow Elm to replace that node.
       var elmPlaceholder = document.createElement("div");
       node.appendChild(elmPlaceholder);
-      app = this.props.src.init({
+      app = this.props.src.Elm.Main.init({
         node: elmPlaceholder,
         flags: this.props.flags
       });
